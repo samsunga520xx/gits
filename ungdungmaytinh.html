@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Document</title>
 </head>
 <body>
-$END$
+<form>
+    So thu 1: <input id="1" type="text" value=""><br/><br/>
+    so thu 2: <input id="2" type="text" value=""><br/><br/>
+    Ket qua:  <input id="3" type="text" value="" disabled>
+    <button type="button" onclick="cong()">Addition(+)</button>
+    <button type="button" onclick="tru()">Subtration(-)</button>
+    <button type="button" onclick="nhan()">Multilipication(*)</button>
+    <button type="button" onclick="chia()">Divisiom(/)</button>
+    <script>
+        function cong(){
+            let a = Number(document.getElementById("1").value);
+            let b = Number(document.getElementById("2").value);
+            document.getElementById("3").value =a+b;
+        }
+        </script>
+    <script>
+        function tru(){
+            let a = Number(document.getElementById("1").value);
+            let b = Number(document.getElementById("2").value);
+            document.getElementById("3").value = a-b;
+        }
+        </script>
+    <script>
+        function nhan(){
+            let a = Number(document.getElementById("1").value);
+            let b = Number(document.getElementById("2").value);
+            document.getElementById("3").value = a*b;
+        }
+        </script>
+    <script>
+        function chia(){
+            let a = Number(document.getElementById("1").value);
+            let b = Number(document.getElementById("2").value);
+            document.getElementById("3").value = a/b;
+        }
+        </script>
+</form>
 </body>
 </html>

@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Document</title>
 </head>
 <body>
-$END$
+<form>
+    Acocount: <input id="1" type="text" size="30"></br>
+    From Currency :
+<select id="2">
+   <option value="23000">VND</option>
+    <option value="1">USD</option>
+    <option value="104.7">Yen</option>
+</select><br/>
+To Currency :
+<select id="3">
+    <option value="23000">VND</option>
+    <option value="1">USD</option>
+    <option value="104.7">Yen</option>
+</select><br/>
+<input id="4" type="text">
+<button type="button"onclick="doi()">doi tai day</button>
+<script>
+    function doi(){
+       leta =+document.getElementById('1').value;
+       letb =+document.getElmentById('2').value;
+       letc =+document.getElementById('3').value;
+       document.getElementById('4').value =a*b/c;
+    }
+</script>
+</form>
 </body>
 </html>
